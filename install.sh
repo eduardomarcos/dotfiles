@@ -7,5 +7,6 @@ cp .hstr_favorites $HOME
 cp -r .vim $HOME
 cp .vimrc $HOME
 
+cp .p10k.zsh $HOME
 cp .zshrc $HOME
 echo "Dotfiles deployed :)"
