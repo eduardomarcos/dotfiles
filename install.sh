@@ -1,3 +1,11 @@
+echo "Making backup..."
+ZSHRC_FILE=$HOME/.zshrc
+
+if [ -f "$ZSHRC_FILE" ]; then
+    echo "Backup for $ZSHRC_FILE"
+    cp $ZSHRC_FILE $HOME/.zshrc_prev
+fi
+
 echo "Installing / Updating dotfiles..."
 cp -r .oh-my-zsh $HOME
 
